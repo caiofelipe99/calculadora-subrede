@@ -1,0 +1,130 @@
+:root {
+    --bg-color: #121212;
+    --container-color: #1e1e1e;
+    --text-color: #e0e0e0;
+    --accent-color: #00bcd4;
+    --btn-bg: #00bcd4;
+    --btn-hover: #0097a7;
+    --border-color: #333;
+    --input-bg: #2a2a2a;
+    --scrollbar-color: #555;
+    --scrollbar-track: #222;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .container {
+    background-color: var(--container-color);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 255, 255, 0.1);
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  h1 {
+    text-align: center;
+    color: var(--accent-color);
+    margin-bottom: 2rem;
+  }
+  
+  label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    box-sizing: border-box;
+  }
+  
+  button {
+    margin-top: 1.5rem;
+    width: 100%;
+    padding: 0.8rem;
+    background-color: var(--btn-bg);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: var(--btn-hover);
+  }
+  
+  #resultado {
+    margin-top: 2rem;
+    line-height: 1.6;
+  }
+  
+  ::selection {
+    background-color: var(--accent-color);
+    color: #000;
+  }
+  
+  /* Scrollbar custom */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-color);
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: var(--scrollbar-track);
+  }
+  
+  /* Tema claro */
+  body.light {
+    --bg-color: #f4f4f4;
+    --container-color: #ffffff;
+    --text-color: #222;
+    --accent-color: #00796b;
+    --btn-bg: #009688;
+    --btn-hover: #00796b;
+    --border-color: #ccc;
+    --input-bg: #f1f1f1;
+    --scrollbar-color: #999;
+    --scrollbar-track: #eee;
+  }
+  
+  /* Botão de alternância de tema */
+  .toggle-wrapper {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  
+  #toggle-theme {
+    padding: 0.4rem 1rem;
+    background-color: var(--btn-bg);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  #toggle-theme:hover {
+    background-color: var(--btn-hover);
+  }
+  

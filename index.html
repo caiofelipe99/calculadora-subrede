@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Sub-rede</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="toggle-wrapper">
+    <button id="toggle-theme">🌙 Modo Escuro</button>
+  </div>
+
+  <div class="container">
+    <h1>Calculadora de Sub-rede</h1>
+
+    <label>Endereço IP:</label>
+    <input type="text" id="ip" placeholder="192.168.1.0">
+
+    <label>Máscara:</label>
+    <select id="cidr"></select>
+
+    <button onclick="calcular()">Calcular</button>
+    <div id="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
